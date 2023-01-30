@@ -73,14 +73,33 @@ public class Operator {
 		//논리부정연산자+비교연산자
 		//'0' ->48; '9' ->57
 		//if문 을 활용해 숫자를 표현하려면 charCode>=48 && charCode<=57 문자로 표현된 숫자를 구하는 방법
-		if(!(charCode<48)&&!(charCode>57)) {
+		if(!(charCode<48)&&!(charCode>57)) {//이상의 반댓말은 미만이고 이하의 반댓말은 초과임으로 그를 활용한 부정논리문의 형태
 			System.out.println("0~9 숫자.");
 		}
 		
+		//문자열의 경우 equals(*속성*)을 활용해야 한다
 		
+		//1+1=2, 하지만 정수 아래 실수의 가능성을 포함하면 x>=2 x<4의 사잇값까지 나올수 있음으로 코딩할때 결과값만 동일하고 수단은 다 다를수 있다
+		//속성이 다를..?
 		
+		//대입연산자
 		
+		int result1 = 0;
+		result1 += 1; //result1 = result1+ 1
+		result1 -= 1; //result1 = result1-1
+
+		//삼항 연산자
 		
+		int score=85;
+		char grade = (score >90)?'A':'B';
+		
+		char grade2;
+		
+		if(score>90) {
+			grade2='A';
+		}else	{
+			grade2='B';
+		}
 		
 		
 	}
